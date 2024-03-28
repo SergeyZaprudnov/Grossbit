@@ -49,7 +49,7 @@ def cashe_machine(request):
 
     # создание и сохранение QR-кода
     qr = qrcode.make(f'{{root}}/media/{file_name}')
-    qr_file_path = f'media/qr_code.png'
+    qr_file_path = 'media/qr_code.png'
     qr.save(qr_file_path)
 
     # чтение и отправка QR-кода в ответ

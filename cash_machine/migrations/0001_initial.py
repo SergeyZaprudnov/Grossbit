@@ -14,9 +14,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Item',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=150, verbose_name='Наименование')),
-                ('price', models.DecimalField(decimal_places=2, max_digits=10, verbose_name='Стоимость')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
+                ('title', models.CharField(max_length=150,
+                                           verbose_name='Наименование')),
+                ('price', models.DecimalField(decimal_places=2, max_digits=10,
+                                              verbose_name='Стоимость')),
             ],
             options={
                 'verbose_name': 'Товар',
